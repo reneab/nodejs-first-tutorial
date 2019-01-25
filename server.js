@@ -3,6 +3,7 @@
 const http = require('http');
 const urlM = require('url');
 const fs = require('fs');
+const uc = require('upper-case');
 
 const hostname = '127.0.0.1';
 const port = 3000;
@@ -34,10 +35,10 @@ const server = http.createServer(function(req, res) {
         // serve other greeting message
         res.write('Successfully logged in ');
         if (u.query.user) {
-            res.write('with username ' + u.query.user);
+            res.write('with username ' + uc(u.query.user));
         }
         if (u.query.id) {
-            res.write(' and with ID ' + u.query.id);
+            res.write(' and with ID ' + uc(u.query.id));
         }
 
         res.end();
