@@ -28,10 +28,11 @@ const server = http.createServer(function(req, res) {
 
         // parsing request
         const u = urlM.parse(req.url, true);
-        console.log(u.pathname);
-        // console.log(u.search);
-        console.log(u.query);
-        
+        console.log(u.host); // ex: localhost:3000
+        console.log(u.pathname); // ex: /login
+        console.log(u.search); // returns the search parameters. Ex: ?user=john
+        console.log(u.query); // returns an object. Ex: {user: john}
+        console.log('======================================')
         // serve other greeting message
         res.write('Successfully logged in ');
         if (u.query.user) {
