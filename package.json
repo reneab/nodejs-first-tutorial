@@ -1,0 +1,25 @@
+{
+  "name": "nodejs-first-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "logger.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reneab/nodejs-first-tutorial.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reneab/nodejs-first-tutorial/issues"
+  },
+  "homepage": "https://github.com/reneab/nodejs-first-tutorial#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "upper-case": "^1.1.3"
+  }
+}
