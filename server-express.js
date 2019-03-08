@@ -29,7 +29,10 @@ app.get('/login', (req, res) => {
     console.log('---------------------------------------------');
 });
 
+// get the port from the environment if any
+const port = process.env.PORT || 3000;
+
 // lauch server
-app.listen(3000, 'localhost', () => {
-    console.log('Listening on port 3000...');
-})
+app.listen(port, 'localhost', () => {
+    console.log('Listening on port ' + port + '...');
+});
